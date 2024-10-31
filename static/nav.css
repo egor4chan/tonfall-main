@@ -1,0 +1,20 @@
+#boardhtml, #frenshtml {
+    left: 0;
+    top: 0;
+    text-align: center;
+    position: relative;
+}
+
+@keyframes close {
+    to {
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
+@keyframes open {
+    to {
+        opacity: 1;
+        z-index: 100;
+    }
+}

@@ -1,0 +1,655 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(30, 30, 36);
+
+    font-family: 'SilkScreen';
+
+    touch-action: manipulation;
+    user-select: none;
+    -webkit-user-select: none;
+
+
+}
+
+button {
+    font-family: 'SilkScreen';
+    user-select: none;
+}
+
+button.down {
+    user-select: none;
+    font-family: 'SilkScreen';
+    font-weight: 500;
+
+    position: absolute;
+    width: 90%;
+    height: 60px;
+    left: 5%;
+    bottom: 20px;
+
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    background: linear-gradient(45deg, rgb(255, 208, 0), rgb(255, 174, 0));
+    border: none;
+    border-bottom: 4px solid rgb(255, 174, 0);
+
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+button.down:hover {
+    background: linear-gradient(45deg, rgb(255, 212, 19), rgb(229, 156, 0));
+}
+
+button.down:active {
+    border-bottom: 1px solid rgb(255, 174, 0);
+}
+
+h1, h4 {
+    width: 90%;
+    left: 5%;
+    position: relative;
+    top: 100px;
+    color: white;
+    font-weight: 100;
+}
+
+h4 {
+    font-size: 14px;
+    color: rgb(193, 190, 190)
+}
+
+#center {
+    text-align: center;
+    left: 0;
+    width: 100%;
+    transition: 0.5s;
+}
+
+#positions {
+    transition: 0.5s;
+}
+
+.big {
+    font-size: 74px;
+}
+
+img#coin {
+    position: relative;
+    height: 50px;
+    width: same-as-height;
+    right: 10px;
+    top: 0px;
+    user-select: none;
+    animation: coin 2s infinite;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+@keyframes coin {
+    from {
+        top: 0px
+    }
+    25% {
+        top: -3px;
+        scale: 1.03;
+    }
+    to {
+        top: 0px
+    }
+}
+
+@keyframes coin16px {
+    from {
+        top: 3px
+    }
+    25% {
+        top: 1px;
+        scale: 1.03;
+    }
+    to {
+        top: 3px
+    }
+}
+
+h1.balance {
+    position: relative;
+}
+
+div#buttons {
+    width: 84%;
+    color: white;
+    flex-wrap: wrap;
+    height: 50px;
+    display: flex;
+    left: 8%;
+
+    position: relative;
+    top: 100px;
+}
+
+div#buttons > div {
+    width: 30%;
+    margin-left: 2.5%;
+    text-align: center;
+    height: 100%;
+    background-color: rgb(27, 27, 27);
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgb(255, 208, 0), rgb(255, 174, 0));
+    border-bottom: 4px solid rgb(255, 174, 0);
+    cursor: pointer;
+    transition: 0.2s;
+    top: 0px;
+
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+div#buttons > div:active {
+    position: relative;
+    top: 2px;
+    border-bottom: 2px solid rgb(255, 174, 0);;
+}
+
+footer {
+    width: 100%;
+    height: 400px;
+    position: absolute;
+    bottom: -400px
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    
+    position: fixed;
+    bottom: 0px;
+    flex-wrap: wrap;
+    display: flex;
+    z-index: 10;
+    box-shadow: 0px 0px 50px rgb(36, 35, 34);
+    background-color: rgb(30, 30, 36);
+}
+
+nav > div {
+    border-top: 2px solid rgb(36, 39, 42);
+    width: 19.7%;
+    text-align: center;
+}
+
+nav > div > img {
+    cursor: pointer;
+    width: 18px;
+    height: 18px;
+    margin-top: 25px;
+}
+
+div.tasks {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 200px;
+
+    top: 120px;
+}
+
+div.tasks > div {
+    width: 100%;
+    height: 70px;
+    border: 1px solid rgb(255, 174, 0);;
+
+    background: linear-gradient(45deg, rgb(255, 208, 0), rgb(255, 174, 0));
+    border-bottom: 4px solid rgb(255, 174, 0);
+
+    margin-top: 8px;
+    border-radius: 10px;
+    
+}
+
+div.tasks > div > img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 16px;
+    margin-top: 14px;
+}
+
+div.tasks > div > p {
+    color: white;
+    width: 80%;
+    position: relative;
+    top: -6px;
+    left: 70px;
+}
+
+div.tasks > div > p.award {
+    top: -16px;
+}
+
+#coin.little {
+    width: 16px;
+    height: 16px;
+    left: 0px;
+
+    animation: coin16px 2s infinite; 
+
+}
+
+div.invite {
+    position: fixed;
+    width: 60%;
+    left: 20%;
+    bottom: 100px;
+    opacity: 0.9;
+}
+
+div.invite:hover {
+    opacity: 1;
+}
+
+div.invite > button {
+    height: 40px;
+    border: none;
+    background: linear-gradient(45deg, rgb(255, 208, 0), rgb(255, 174, 0));
+    border-bottom: 4px solid rgb(255, 174, 0);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+}
+
+button#invite {
+    width: calc(95% - 40px);
+}
+
+button#copy {
+    width: 40px;
+}
+
+.bcoin {
+    position: fixed;
+    width: 100px;
+    height: 100px;
+    top: -200px;
+    transition: 0s;
+    left: 10px;
+    opacity: 0.5;
+    z-index: -1;
+    opacity: 1;
+    cursor: pointer;
+    padding: 40px;
+    padding-bottom: 10px;
+    border-radius: 30%;
+    transform: rotate(0deg);
+
+    touch-action: none;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+@keyframes drop {
+    from {
+        top: -200px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        top: 100%;
+        opacity: 1.5;
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes drop_second {
+    from {
+        top: -200px;
+        transform: rotate(0deg);
+    }
+
+    to {
+        top: 100%;
+        opacity: 1.5;
+        transform: rotate(-100deg);
+    }
+}
+
+@keyframes tap {
+    to {
+        opacity: 0;
+    }
+}
+
+.board {
+    text-align: left;
+    position: relative;
+    font-size: 40px;
+    opacity: 0.9;
+    
+}
+
+#coinlittle {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    top: 4px;
+}
+
+#coin2 {
+    position: relative;
+    height: 30px;
+    width: same-as-height;
+    right: 10px;
+    top: 0px;
+
+    animation: coin 2s infinite;
+    position: relative;
+}
+
+.cloud {
+    background-color: black;
+}
+
+/* shop */
+
+
+div.shoptasks {
+    position: relative;
+    width: 80%;
+    left: 10%;
+    height: 200px;
+
+    top: 120px;
+}
+
+div.shoptasks > div {
+    width: 100%;
+    height: 70px;
+    border: 1px solid rgb(62, 62, 75);
+
+    background: linear-gradient(45deg, rgb(30, 30, 36), rgb(47, 47, 56));
+    border-bottom: 4px solid rgb(62, 62, 75);
+
+    margin-top: 8px;
+    border-radius: 10px;
+    left: 0px;
+    
+}
+
+div.shoptasks > div > img {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: 16px;
+    margin-top: 14px;
+}
+
+div.shoptasks > div > p {
+    color: white;
+    width: 80%;
+    position: relative;
+    top: -6px;
+    left: 70px;
+}
+
+div.shoptasks > div > p.award {
+    top: -16px;
+    color: rgb(226, 225, 225);
+    font-size: 14px;
+}
+
+p.award > a  {
+    position: absolute;
+    right: 20px;
+    top: -20px;
+    padding: 8px;
+    border: 1px solid rgb(62, 62, 75);
+    border-radius: 4px;
+    color: red;
+}
+
+
+@keyframes shake {
+    from {
+        margin-left: 0px;
+    }
+    25% {
+        margin-left: 5px;
+    }
+    75% {
+        margin-left: -5px
+    }to {
+        scale: 1;
+        margin-left: 0px;
+    }
+}
+
+@keyframes rotating {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(100deg);
+    }
+}
+
+
+div#cloud {
+    position: fixed;
+    width: 80%;
+    height: 400px;
+
+    left: 10%;
+    top: 100px;
+    background-color: aliceblue;
+    background: linear-gradient(45deg, rgb(30, 30, 36), rgb(47, 47, 56));
+    border-bottom: 4px solid rgb(62, 62, 75);
+
+
+    transition: 1s;
+    border-radius: 10px;
+}
+
+button#buyPosition {
+    width: 90%;
+    height: 50px;
+
+    border: none;
+    border-radius: 10px;
+
+    position: absolute;
+    left: 5%;
+    bottom: 20px;
+
+    background: linear-gradient(45deg, rgb(255, 208, 0), rgb(255, 174, 0));
+    border-bottom: 4px solid rgb(255, 174, 0);
+
+    color: white;
+    cursor: pointer;
+
+    font-size: 18px;
+}
+
+#notify {
+    width: calc(60% - 40px);
+    
+    left: 20%;
+    position: fixed;
+    top: -100px;
+    background-color: rgb(136, 223, 5);
+    border-bottom: 3px solid rgb(100, 164, 5);;
+    border-radius: 10px;
+    color: white;
+    padding: 0px 20px;
+    font-size: 10px;
+    text-align: center;
+}
+
+div.levels {
+    color: rgb(110, 110, 110);
+    position: fixed;
+    left: 5%;
+    opacity: 0;
+}
+
+@keyframes notify {
+    from {
+        top: -120px
+    }
+    20% {
+        top: 20px;
+    }
+    80% {
+        top: 20px;
+    }
+    to {
+        top: -120px;
+    }
+}
+
+div#ton {
+    width: 80%;
+    height: 300px;
+    left: 10%;
+    top: -55%; /* 25% */
+    position: fixed;
+    background-color: rgb(15, 134, 213);
+    border-bottom: 3px solid rgb(9, 95, 153);
+    z-index: 15;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+div#ton > button {
+    width: 90%;
+    left: 5%;
+    position: absolute;
+    height: 50px;
+    bottom: 16px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    color: rgb(15, 134, 213);
+    border-bottom: 3px solid rgb(190, 189, 189);
+}
+
+div#ton > h3 {
+    color: white;
+    position: absolute;
+    left: 15px;
+}
+
+div#ton > h5 {
+    color: white;
+    left: 15px;
+    position: absolute;
+    top: 100px;
+}
+
+div#levelBoard {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(255, 179, 0);
+
+    transition: 0.1s;
+    opacity: 0.9;
+}
+
+#counter {
+    color: rgb(255, 255, 255);
+    opacity: 0;
+    font-size: 16px;
+    animation: counter 2s forwards;
+    position: absolute;
+    top: 0px;
+}
+
+#scaleLVL {
+    opacity: 0;
+}
+@keyframes counter {
+    from {
+        opacity: 0;
+        
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        top: 100px;
+    }
+}
+
+.shopcoin {
+    animation: shopcoin 2s infinite;
+}
+
+@keyframes shopcoin {
+    from {
+        scale: 1;
+    }
+    50% {
+        scale: 1.05;
+        rotate: 3deg
+    }
+    to {
+        scale: 1;
+        rotate: 0deg;
+    }
+}
+
+div#first {
+    background-color: rgb(36, 44, 52);
+}
+
+@keyframes breef {
+    from {
+        border-bottom: 4px solid rgb(62, 62, 75);
+        scale: 1
+    }
+    50% {
+        border-bottom: 4px solid rgb(255, 179, 0);
+        scale: 1.01;
+    }
+    to {
+        border-bottom: 4px solid rgb(62, 62, 75);
+    }
+}
+
+@keyframes off {
+    from {
+        opacity: 1;
+        z-index: 100;
+    }
+
+    99% {
+        z-index: 100;
+    }
+    to {
+        opacity: 0;
+        z-index: -100;
+    }
+}
+
+@keyframes off {
+    from {
+        opacity: 0;
+        z-index: -100;
+    }
+
+    99% {
+        z-index: -100;
+    }
+    to {
+        opacity: 1;
+        z-index: 100;
+    }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/board.css">
+    <link rel="stylesheet" href="static/nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Inviting</title>
+</head>
+<body style="overflow-y: hidden;">
+<div id="boardhtml" style="opacity: 1; z-index: 100;">
+    <div id="levelBoard">
+        
+    </div>
+
+    <span id="scaleLVL" style="color: wheat;"></span>
+    <div id="scale">
+        <h5>
+        +100
+        <img src="static/js/images/IMG_0933.PNG" alt="">
+        </h5>
+    </div>
+
+    <div id="ton">
+        <h3>make a transaction and earn ton in our app!!!</h3>
+        <h5>You will take 0.001 - 0.1 TON <br>from one TON coin you tap.</h5>
+        <button onclick="hide()">Make transaction</button>
+    </div>
+
+    <div class="levels">
+    <p id="gold">1</p>
+    <p id="plat">1</p>
+    <p id="donut">1</p>
+    </div>
+    <h1 class='big balance board' id="center">
+        <a id="balance">0</a>
+        <img id='coin2' class="specialcoin" src="static/js/images/IMG_0933.PNG" alt="">
+    </h1>
+
+    </div>
+
+
+    <nav>
+        <div onclick="">
+            <img src="static/js/images/IMG_0936.PNG" alt="">
+        </div>
+        <div onclick="locate('/shop')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/frens')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/top')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/tasks')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+    </nav>
+
+    <script src="static/nav.js"></script>
+    <script src="static/js/tasks.js"></script>
+    <script src="static/js/localstorage.js"></script>
+    <script src="static/js/updating.js"></script>
+    <script src="static/js/locaion.js"></script>
+    <script src="static/js/notstart.js"></script>
+    <script src="static/js/back.js"></script>
+    <script src="static/js/board.js" id="boardscript"></script>
+   <script src="static/js/Level.js"></script>
+   
+</body> 
+</html>

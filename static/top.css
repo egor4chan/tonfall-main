@@ -1,0 +1,186 @@
+div#leaders {
+    width: 90%;
+    left: 5%;
+    height: 150px;
+    position: absolute;
+    top: 100px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+div.circle {
+    width: 90px;
+    height: 90px;
+    border-radius: 40px;
+    background-color: aliceblue;
+    background-color: rgb(30, 30, 36);
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color:white;
+    font-size: 40px;
+    opacity: 0.9;
+}
+
+span {
+    opacity: 1;
+}
+
+
+span.earned {
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 20px;
+    top: 16px;
+
+}
+
+span.earned > img {
+    height: 20px;
+    width: same-as-height;
+    position: relative;
+    top: 5px;
+}
+
+span.earnedTON {
+    color: white;
+    position: absolute;
+    text-align: right;
+    right: 20px;
+    bottom: 18px;
+
+}
+
+span.earnedTON > img {
+    height: 20px;
+    width: same-as-height;
+    position: relative;
+    top: 5px;
+}
+
+
+
+div#firstPlace {
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    font-size: 50px;
+    border: 1px solid rgb(249, 204, 3);
+    background: linear-gradient(45deg, rgb(249, 204, 3), rgb(249, 167, 3));
+}
+
+div#secondPlace {
+    position: absolute;
+    left: 10px;
+    border: 1px solid rgb(175, 175, 175);
+    background: linear-gradient(45deg, rgb(175, 175, 175), rgb(133, 132, 132));
+}
+
+div#thirdPlace {
+    position: absolute;
+    right: 10px;
+    border: 1px solid rgb(207, 132, 3);
+    background: linear-gradient(45deg, rgb(207, 132, 3), rgb(149, 96, 3));
+}
+
+
+span#number1 {
+    position: absolute;
+    bottom: 10px;
+    color: white;
+    font-size: 18px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: rgb(249, 204, 3);;
+}
+
+span#number2 {
+    position: absolute;
+    bottom: -12px;
+    color: white;
+    font-size: 18px;
+    background-color: silver;
+    padding: 3px 8px;
+    border-radius: 5px;
+}
+
+span#number3 {
+    position: absolute;
+    bottom: -12px;
+    color: white;
+    font-size: 18px;
+    padding: 3px 8px;
+    border-radius: 5px;
+    background-color: rgb(207, 132, 3);
+}
+
+div#otherLeaders {
+    position: absolute;
+    width: 90%;
+    left: 5%;
+    height: 400px;
+
+    top: 300px;
+}
+
+div#otherLeaders > div {
+    position: relative;
+    width: 95%;
+    left: 2.5%;
+    height: 90px;
+    top: -10px;
+    margin-top: 10px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 36);
+    opacity: 0.9;
+    border: 1px solid rgb(62, 62, 75);
+}
+
+span.number {
+    position: relative;
+    left: 10px;
+    top: 18px;
+    padding: 8px 5px;
+    color: silver;
+
+}
+
+span.username {
+    color: silver;
+    position: relative;
+    top: 18px;
+    left: 10px
+}
+
+div#selfLeader {
+    position: fixed;
+    bottom: 100px;
+    width: 86%;
+    height: 90px;
+    left: 7%;
+    background-color: aliceblue;
+
+    background-color: aliceblue;
+    border-radius: 10px;
+    background-color: rgb(30, 30, 36);
+    opacity: 1;
+    border: 1px solid rgb(255, 204, 0);
+    z-index: 100;
+}
+
+footer {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    top: 1100px
+}
+
+div#first {
+    background-color: aliceblue;
+}

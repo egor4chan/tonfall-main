@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/start.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Inviting</title>
+</head>
+<body>
+<div id="shophtml">
+    <span id="scaleLVL" style="color: wheat;">1</span>
+    <div id="ton">
+        <h3>make a transaction and earn ton in our app!!!</h3>
+        <h5>You will take 0.001 - 0.1 TON <br>from one TON coin you tap.</h5>
+        <button onclick="hide()">Make transaction</button>
+    </div>
+    <div id="notify">
+        <h2>Success buy!</h2>
+    </div>
+    <center>
+        <h1 class='big balance' id="center">
+            <a id="balance" style="font-size: 53px;">3330</a>
+            <img id='coin' src="static/js/images/IMG_0933.PNG">
+        </h1>
+        
+    </center>
+    <h4 id="center">Update your tap and earn more <br> coins per one tap.
+    </h4>
+
+
+    <div class="shoptasks" id="positions">
+        <div id="goldtask" onclick="shake(1)">
+            <img src="static/js/images/IMG_0933.PNG" alt="" class="shopcoin">
+            <p>Gold </p>
+            <p class="award">
+                <span id="gold">1</span> LVL -
+                <span id="goldEarn">1</span>
+                <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+                <a id="goldCost">
+                    <span id="GoldPrice">300</span>
+                    <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+                </a>
+            </p>
+        </div>
+        <div id='plattask' onclick="shake(2)">
+            <img src="static/js/images/silver.PNG" alt="" class="shopcoin">
+            <p>Platinum</p>
+            <p class="award">
+                <span id="plat">1</span> LVL - 
+                <span id="platEarn">5</span>
+                <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+                <a id="platCost">
+                    <span id="PlatPrice">500</span>
+                    <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+                </a>
+            </p>
+            
+        </div>
+        <div id='donuttask' onclick="shake(3)">
+            <img src="static/js/images/donut.PNG" alt="" class="shopcoin">
+            <p>donut</p>
+            <p class="award">
+                <span id="donut">1</span> lvl - 
+                <span id="donutEarn">50</span>
+                <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+                <a id="donutCost">
+                    <span id="DonutPrice">1000</span>
+                    <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+                </a>
+            </p>
+        </div>
+        <div id='tontask' onclick="openTON()">
+            <img src="static/js/images/ton.PNG" alt="" class="shopcoin">
+            <p>ton coin</p>
+            <p class="award">
+                0.01 - 0.1 
+                <img id='coin' class="little" src="static/js/images/ton.PNG">
+                <a style="color: white">
+                    GO!
+                    <img id='coin' class="little" src="static/js/images/ton.PNG">
+                </a>
+            </p>
+        </div>
+
+</div>
+
+    <footer></footer>
+
+    <nav>
+        <div onclick="locate('/game')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/shop')">
+            <img src="static/js/images/IMG_0936.PNG" alt="">
+        </div>
+        <div onclick="locate('/frens')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/top')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/tasks')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+    </nav>
+
+    <script src="static/js/board.js"></script>
+    <script src="static/js/localstorage.js"></script>
+    <script src="static/js/shop.js"></script>
+    <script src="static/js/updating.js"></script>
+    <script src="static/js/locaion.js"></script>
+    <script src="static/js/back.js"></script>
+    <script src="static/js/notstart.js"></script>
+</body>
+</html>

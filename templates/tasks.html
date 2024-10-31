@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="static/start.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <title>Inviting</title>
+    <link rel="stylesheet" href="static/tasks.css">
+</head>
+<body>
+    <h1 class='big' id="center">TASKS</h1>
+    <h4 id="center" style="margin-top: -14px;">complete tasks and earn coins <br>or real money...</h4>
+
+
+
+    <span id="statictasks">Static tasks</span>
+    <div id="taskstable">
+        <div id='donutsTotalDiv'>
+            <span>claim 10 donuts</span><br>
+            <span id="award">award: 500
+                <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+            </span>
+            
+            <div id="progressbar">
+                <span id="donutTotal">0</span>/<span id="donutTotalNeed">10</span>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <span id="onetimetasks">onetime tasks</span>
+    <div id="onetimetaskstable">
+        <div>
+            <span>subscribe us</span><br>
+            <span id="award">award: 2.5k
+                <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+            </span>
+        </div>
+
+        <div>
+            <span>make transaction</span>
+            <br>
+            <span id="award">award: 5k
+                <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+            </span>
+        </div>
+
+        <div>
+            <span>subscribe partners</span>
+            <br>
+            <span id="award">award: 2.5k
+                <img id='coin' class="little" src="static/js/images/IMG_0933.PNG">
+            </span>
+        </div>
+    </div>
+
+
+    <nav>
+        <div onclick="locate('/game')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/shop')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/frens')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/top')">
+            <img src="static/js/images/IMG_0935.PNG" alt="">
+        </div>
+        <div onclick="locate('/tasks')">
+            <img src="static/js/images/IMG_0936.PNG" alt="">
+        </div>
+    </nav>
+
+    
+    <script src="static/js/tasks.js"></script>
+    <script src="static/js/tasks_comp.js"></script>
+    <script src="static/js/frens.js"></script>
+    <script src="static/js/locaion.js"></script>
+    <script src="static/js/back.js"></script>
+    <script src="static/js/notstart.js"></script>
+</body> 
+</html>

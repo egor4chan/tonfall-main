@@ -1,7 +1,7 @@
 // Telegram Initialisation
 
 var WebApp = window.Telegram.WebApp;
-const TelegramUserID = WebApp.initDataUnsafe.user.id; // user_id from inline mode
+var TelegramUserID = WebApp.initDataUnsafe.user.id; // user_id from inline mode
 
 alert('Ur UID ', TelegramUserID)
 
